@@ -10,8 +10,12 @@
   max-width: 1200px;
 }
 
+.purple {
+  color:  #7342d6;
+}
+
 nav {
-  border: 8px solid purple;
+  border: 8px solid #7342d6;
   padding: 12px 48px;
   display: flex;
   justify-content: space-between;
@@ -50,8 +54,50 @@ nav {
 }
 
 .btn {
-  background-color: purple;
+  background-color: #7342d6;
   border-radius: 16px;
   color: white;
   padding: 8px 16px
+}
+
+.hero__img--wrapper {
+  width: 100%;
+}
+
+/*
+
+FEATURES
+
+*/
+
+.features__container {
+  padding: 0 80px;
+  display: flex;
+}
+
+.features__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature__title {
+  margin: 24px 0;
+}
+
+.features__sub-title {
+  font-size: 42px;
+  font-weight: 900;
+}
+
+.features__para {
+  margin: 24px 0;
+  padding: 0 32px;
+  line-height: 1.5;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
 }
