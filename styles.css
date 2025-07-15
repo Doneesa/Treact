@@ -8,11 +8,25 @@
 
 .row {
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .purple {
   color:  #7342d6;
 }
+
+.btn {
+  background-color: #7342d6;
+  border-radius: 16px;
+  color: white;
+  padding: 8px 16px
+}
+
+/*
+
+NAVIGATION
+
+*/
 
 nav {
   border: 8px solid #7342d6;
@@ -53,13 +67,6 @@ nav {
   margin-left: 24px;
 }
 
-.btn {
-  background-color: #7342d6;
-  border-radius: 16px;
-  color: white;
-  padding: 8px 16px
-}
-
 .hero__img--wrapper {
   width: 100%;
 }
@@ -71,33 +78,34 @@ FEATURES
 */
 
 .features__container {
-  padding: 0 80px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
 }
 
 .features__header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 
-.feature__title {
+.features__title {
   margin: 24px 0;
+  font-size: 24px;
 }
 
 .features__sub-title {
-  font-size: 42px;
+  font-size: 56px;
   font-weight: 900;
 }
 
 .features__para {
   margin: 24px 0;
-  padding: 0 32px;
+  padding: 0 305px;
   line-height: 1.5;
 }
 
-.services {
+.services__container {
   display: flex;
   flex-wrap: wrap;
 }
