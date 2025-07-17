@@ -7,8 +7,24 @@
 }
 
 .row {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.area {
+  margin: 48px 0;
+}
+
+.titles {
+  margin: 24px 0;
+  font-size: 24px;
+  color: #7342d6;
+} 
+
+.titles__large {
+  font-size: 56px;
+  font-weight: 900;
 }
 
 .purple {
@@ -49,15 +65,16 @@ nav {
 
 .brand {
   font-weight: 900;
+  color: grey
 }
 
 .nav__links--container {
-  
+
 }
 
 .nav__link,
 .nav__link--login {
-  color: black;
+  color: grey;
   text-decoration: none;
   font-weight: 700;
   padding: 0 12px;
@@ -96,6 +113,7 @@ FEATURES
 .features__title {
   margin: 24px 0;
   font-size: 24px;
+  color: #7342d6;
 }
 
 .features__sub-title {
@@ -120,13 +138,14 @@ SERVICES
 .services {
   display: flex;
   flex-wrap: wrap;
-  margin: 24px 80px;
+  margin: 24px 0;
 }
 
 .service {
   display: flex;
   width: calc(100%/3);
-  margin-bottom: 24px;
+  margin: 12px 0;
+  padding: 0 12px;
 }
 
 .service__description {
@@ -139,8 +158,8 @@ SERVICES
   font-weight: 900;
 }
 
-.icon__wrapper {
- 
+.service__icon--wrapper {
+  font-size: 24px;
 }
 
 .icon {
@@ -159,4 +178,25 @@ SERVICES
   line-height: 2;
   font-weight: 900;
   color: grey;
+}
+
+/*
+
+QUALITY
+
+*/
+
+.quality {
+  margin: 24px 0;
+}
+
+.quality__work{
+  margin: 48px 0;
+  padding: 0 12px;
+  width: 100%;
+}
+
+.quality__work--description {
+  width: 50%;
+  padding: 12px;
 }
