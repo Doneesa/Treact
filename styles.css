@@ -71,6 +71,10 @@ nav {
   width: 100%;
 }
 
+.hero__img {
+  width: 100%;
+}
+
 /*
 
 FEATURES
@@ -103,9 +107,56 @@ FEATURES
   margin: 24px 0;
   padding: 0 305px;
   line-height: 1.5;
+  font-weight: 700;
+  color:  grey;
 }
 
-.services__container {
+/*
+
+SERVICES
+
+*/
+
+.services {
   display: flex;
   flex-wrap: wrap;
+  margin: 24px 80px;
+}
+
+.service {
+  display: flex;
+  width: calc(100%/3);
+  margin-bottom: 24px;
+}
+
+.service__description {
+  margin: 12px;
+}
+
+.service__title {
+  margin: 12px 0;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.icon__wrapper {
+ 
+}
+
+.icon {
+  border: solid 4px lightgrey;
+  border-radius: 50px;
+  margin: 24px;
+  padding: 24px;
+}
+
+.service__description {
+  display: flex;
+  flex-direction: column;
+}
+
+.service__para {
+  line-height: 2;
+  font-weight: 900;
+  color: grey;
 }
