@@ -229,14 +229,11 @@ QUALITY
   margin: 24px 0;
 }
 
-.quality__work area {
-  display: flex;
-}
-
 .quality__work {
   margin: 32px 0;
   padding: 12px 0;
   width: 100%;
+  display: flex;
 }
 
 .quality__work--description {
@@ -244,9 +241,6 @@ QUALITY
   padding: 12px;
   display: flex;
   flex-direction: column;
-}
-
-.quality__work--para {
 }
 
 .quality__img--wrapper {
@@ -262,9 +256,6 @@ QUALITY
 STEPS
 
 */
-.steps__list {
-  
-}
 
 .steps {
   width: 50%;
@@ -278,4 +269,12 @@ STEPS
   color: grey;
   line-height: 2;
   font-weight: 700;
+}
+
+.half__pic {
+  width: 50%;
+}
+
+.half__pic--img {
+  width: 100%;
 }
