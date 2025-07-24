@@ -54,13 +54,20 @@
   color: white;
 }
 
+a {
+  margin-right: 24px;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+}
+
 /*
 
 NAVIGATION
 
 */
 
-nav {
+.nav {
   border: 8px solid #7342d6;
   padding: 12px 48px;
   display: flex;
@@ -84,7 +91,7 @@ nav {
   color: grey
 }
 
-.modal__link--primary
+.modal__link--primary 
 
 .nav__link {
   color: grey;
@@ -95,10 +102,15 @@ nav {
 
 .nav__link--login {
   margin-left: 24px;
-  color: grey;
-  text-decoration: none;
+}
+
+.nav__link--sign-up {
+  margin: 12px 0;
+  padding: 12px 24px;
+  border-radius: 24px;
+  background-color: #7342d6;
   font-weight: 700;
-  padding: 0 12px;
+  color: white;
 }
 
 /*
@@ -106,39 +118,67 @@ nav {
 TEMPLATES
 
 */
-#templates {
+
+.header {
   display: flex;
+  margin: 36px;
 }
 
 .templates__description {
-  margin: 36px 0;
-  padding: 12px 0 12px 24px ;
-  width: 40%;
+  padding: 12px 0 12px 24px;
   display: flex;
   flex-direction: column;
 }
 
 .templates__para {
   margin: 12px 0;
+  padding-right: 12px;
+  line-height: 1.5;
+  font-weight: 900;
   color: grey;
+
 }
+
+.cta-container {
+  margin: 12px 68px 48px 0;
+  display: flex;
+  justify-content: space-between;
+  border: solid lightgrey 2px ;
+  border-radius: 36px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.email-input {
+  margin-left: 24px;
+  border: none;
+}
+
+.cta-button {
+  padding: 12px 24px;
+  border-radius: 36px;
+  background-color: #7342d6;
+  color: white;
+
+}
+
 .h6 {
-  margin-bottom: 36px;
+ margin: 12px 0;
   color: grey;
 }
 
 .templates__img--wrapper {
-  margin: 12px 0;
-  width: 80%;
+  
+  width: 70%;
 }
 
 .templates__img {
   width: 100%;
-  color: lightgrey;
 }
 
 .template__picture {
-  width: 60%;
+  width: 100%;
 }
 
 .template__img--wrapper {
