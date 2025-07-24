@@ -18,12 +18,12 @@
 
 .titles {
   margin: 12px 0;
-  font-size: 16px;
+  font-size: 24px;
   color: #7342d6;
 } 
 
 .titles__large {
-  margin: 24px 0;
+  margin: 12px 0;
   font-size: 48px;
   font-weight: 900;
 }
@@ -52,6 +52,7 @@
   background-color: #7342d6;
   font-weight: 700;
   color: white;
+  max-width: 140px;
 }
 
 a {
@@ -207,7 +208,7 @@ FEATURES
 
 .features__header {
   text-align: center;
-  margin: 12px 0;
+  margin: 12px 80px;
 }
 
 .features__title {
@@ -219,6 +220,10 @@ FEATURES
 .features__sub-title {
   font-size: 56px;
   font-weight: 900;
+}
+
+.features__para {
+  padding: 12px 200px;
 }
 
 /*
@@ -271,8 +276,8 @@ QUALITY
 }
 
 .quality__work {
-  margin: 32px 0;
-  padding: 12px 0;
+  margin: 160px 0;
+  padding: 36px;
   width: 100%;
   display: flex;
 }
@@ -286,10 +291,25 @@ QUALITY
 
 .quality__img--wrapper {
   width: 50%;
+  padding: 12px;
 }
 
 .quality__img{
   width: 100%;
+  height: 100%;
+}
+
+.quality__square {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.quality__square--wrapper {
+  width: 100px;
+  height: 100px;
+
 }
 
 /*
