@@ -10,26 +10,22 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.area {
-  margin: 48px 0;
+  display: flex;
 }
 
 .titles {
   margin: 12px 0;
-  font-size: 24px;
+  font-size: 16px;
   color: #7342d6;
 } 
 
 .titles__large {
   margin: 12px 0;
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 900;
 }
 
 .list__title {
-  margin: 12px 0;
   font-size: 24px;
   font-weight: 900;
 }
@@ -69,11 +65,11 @@ NAVIGATION
 */
 
 .nav {
-  border: 8px solid #7342d6;
   padding: 12px 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 8px solid #7342d6;
 }
 
 .logo__brand--container {
@@ -326,17 +322,9 @@ LAPTOP AND STEPS
 
 */
 
-
-.laptop__pic {
-  margin: 16px 0 ;
-  padding: 16px;
-  display: flex;
-} 
-
 .laptop__pic--wrapper {
-  padding: 48px 16px 78px 32px;
-  display: flex;
   width: 50%;
+  padding: 48px 16px 78px 32px;
 }
 
 .laptop__pic--img {
@@ -354,21 +342,31 @@ LAPTOP AND STEPS
   flex-direction: column;
 }
 
-.step {
+.step__container {
+  margin-top: 16px;
+  padding-right: 36px;
   display: flex;
-  align-items: center;
 }
 
 .step__number {
-  margin: 16px;
+  margin-right: 16px;
   font-size: 36px;
   font-weight: 900;
   color: lightgrey;
+  align-items: flex-end;
 }
 
-.steps__description {
+.step__description {
   display: flex;
   flex-direction: column;
-  line-height: 1.5;
+  padding: ;
+}
+
+.step__para {
+  margin-top: 16px;
+  width: 70%;
+  line-height: 2;
+  font-size: 16px;
   font-weight: 700;
+  color: grey;
 }
