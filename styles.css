@@ -70,6 +70,7 @@ NAVIGATION
   justify-content: space-between;
   align-items: center;
   border: 8px solid #7342d6;
+  flex: 1;
 }
 
 .logo__brand--container {
@@ -196,7 +197,8 @@ FEATURES
 .features__container {
   width: 100%;
   max-width: 1200px;
-  margin: 120px 0;
+  margin: 40px 0;
+  padding: 0 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -268,8 +270,8 @@ QUALITY
 */
 
 .quality__work {
-  margin: 160px 0;
-  padding: 36px;
+  margin: 160px 16px;
+  padding: 16px;
   width: 100%;
   display: flex;
 }
@@ -323,8 +325,9 @@ LAPTOP AND STEPS
 */
 
 .laptop__pic--wrapper {
-  width: 50%;
+  margin: 16px;
   padding: 48px 16px 78px 32px;
+  width: 50%;
 }
 
 .laptop__pic--img {
@@ -332,9 +335,16 @@ LAPTOP AND STEPS
 }
 
 .steps {
+  margin: 0 16px;
+  padding: 0 16px;
   width: 50%;
   display: flex;
   flex-direction: column;
+}
+
+.steps__title,
+.steps__title--large {
+  margin-left: 60px;
 }
 
 .steps__container {
@@ -359,7 +369,6 @@ LAPTOP AND STEPS
 .step__description {
   display: flex;
   flex-direction: column;
-  padding: ;
 }
 
 .step__para {
@@ -369,4 +378,110 @@ LAPTOP AND STEPS
   font-size: 16px;
   font-weight: 700;
   color: grey;
+}
+
+/*
+
+VALUES
+
+*/
+
+.values {
+  margin: 64px 16px;
+  width: 25%;
+}
+
+/*
+
+PRICING
+
+*/
+
+.pricing {
+  margin: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.plans__para {
+  padding: 12px;
+  width: 60%;
+  line-height: 1.5;
+}
+
+.pricing__cards {
+  padding:0 160px ;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+ .pricing__card {
+  margin: 24px;
+  width: calc(100%/3);
+  border: solid 2px lightgrey;
+  border-top: 8px solid green;
+  border-radius: 12px;
+}
+
+.pricing__box {
+  padding: 12px;
+  border: solid 2px lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__card--package {
+  margin: 12px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.pricing__card--price {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.pricing__card--term {
+  margin: 12px;
+  color: grey;
+}
+
+.pricing__description {
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 2px lightgrey;
+}
+
+.pricing__package--description {
+  margin-bottom: 24px;
+  font-weight: 900;
+}
+
+.pricing__package--list 
+
+.pricing__package--list-item {
+  margin-bottom: 12px;
+  line-height: 2;
+}
+
+.button {
+  border: solid 2px lightgrey;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.btn__green {
+  margin: 24px;
+  padding: 12px 48px;
+  background-color: green;
+  border-radius: 56px;
+  color: white;
+  font-weight: 700;
 }
