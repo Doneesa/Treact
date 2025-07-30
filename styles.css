@@ -325,6 +325,12 @@ LAPTOP AND STEPS
 
 */
 
+.laptop__steps--wrapper {
+  display: flex;
+  margin: 12px;
+  padding: 12px;
+}
+
 .laptop {
 
   width: 50%;
@@ -334,23 +340,17 @@ LAPTOP AND STEPS
 .laptop__pic--wrapper {
   width: 100%;
   margin: 16px;
-  padding: 48px 16px 78px 32px;
+  padding: 48px 32px 78px 32px;
 }
 
 .laptop__pic--img {
   width: 100%;
 }
 
-/*
-
-STEPS
-
-*/
-
 .steps {
   width: 50%;
   margin: 0 16px;
-  padding: 0 16px;
+  padding: 0 32px;
   display: flex;
   flex-direction: column;
 }
@@ -401,7 +401,7 @@ VALUES
 
 .values {
   margin: 64px 16px;
-  width: 25%;
+  width: 50%;
 }
 
 /*
@@ -573,27 +573,42 @@ footer {
   width: 100%;
 }
 
-.links {
+.links__types {
   width: 100%;
-  margin-top: 100px;
-  padding: 40px 100px;
-  background-color: #593ffd;
+  margin-top: 200px;
+  padding: 60px 180px;
+  background-color: #5d3ee6;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-link {
+.links_type {
   width: calc(100%/5);
   margin: 12px;
-  padding: 12px;
+  padding: 48px;
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
-}
-
-.link__category {
   color: white;
 }
 
+.links {
+  margin-bottom: 24px;
+  color: white;
+}
+
+.link {
+  list-style: none;
+  margin: 12px 0;
+}
+
+.link__anchor {
+  color: white;
+
+}
+
+.footer__info {
+  background-color: #5d3ee6;
+}
