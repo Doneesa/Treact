@@ -426,14 +426,18 @@ PRICING
 }
 
 .pricing__cards {
-  padding:0 160px ;
+  padding: 16px 0 ;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 12px;
 }
- .pricing__card {
-   width: calc(100%/3);
-   border: solid 2px lightgrey;
+.pricing__card {
+  width: 100%;
+  max-width: 384px;
+  margin: 8px;
+  border: solid 2px lightgrey;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px;
   }
   
 .green {
