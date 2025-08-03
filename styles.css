@@ -16,13 +16,13 @@
 
 .titles {
   margin: 12px 0;
-  font-size: 16px;
+  font-size: 24px;
   color: #7342d6;
 } 
 
 .titles__large {
   margin: 12px 0;
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 900;
 }
 
@@ -430,14 +430,22 @@ PRICING
   display: flex;
   flex-wrap: wrap;
 }
+
 .pricing__card {
   width: 100%;
   max-width: 384px;
   margin: 8px;
-  border: solid 2px lightgrey;
+  border: solid 1px lightgrey;
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0) 0px 0px;
+  box-shadow: 
+  rgba(0, 0, 0, 0) 0px 0px
+  rgba(0, 0, 0, 0) 0px 0px,
+  rgba(0, 0, 0, 0.1) 0px 1px,
+  rgba(0,0,0,0.06) 0px 2px 4px,;
+  position: relative;
+  z-index: 2;
+  background: #fff;
   }
   
 .green {
@@ -478,7 +486,7 @@ PRICING
 
 .pricing__box {
   padding: 12px;
-  border: solid 2px lightgrey;
+  border: solid 1px lightgrey;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -509,7 +517,7 @@ PRICING
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 2px lightgrey;
+  border: solid 1px lightgrey;
 }
 
 .pricing__package--description {
@@ -525,7 +533,7 @@ PRICING
 }
 
 .button {
-  border: solid 2px lightgrey;
+  border: solid 1px lightgrey;
   display: flex;
   justify-content: center;
 }
@@ -643,4 +651,17 @@ footer {
   background-color: white;
   padding: 12px;
   border-radius: 50px;
+}
+
+
+
+/* Small phones, tablets, large smartphones */
+@media (max-width: 768px) {
+
+}
+
+/* SMALL PHONES */
+
+@media (max-width: 480px) {
+
 }
