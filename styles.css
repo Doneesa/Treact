@@ -90,10 +90,18 @@ NAVIGATION
   color: grey
 }
 
-.modal__link--primary 
+.nav__links--container {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
 
 .nav__link {
+  display: flex;
   color: grey;
+  list-style: none;
   text-decoration: none;
   font-weight: 700;
   padding: 0 12px;
@@ -103,7 +111,7 @@ NAVIGATION
   margin-left: 24px;
 }
 
-.nav__link--sign-up {
+.nav__link--primary {
   margin: 12px 0;
   padding: 12px 24px;
   border-radius: 24px;

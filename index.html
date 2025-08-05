@@ -12,49 +12,48 @@
 <body>
   <div class="row">
     <section class="nav">
-      <nav>
 
-        
-        <div class="logo__brand--container">
-          <img src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" class="logo" alt="">
-          <h1 class="brand">Treact</h1>
-        </div>
-        <div class="nav__links--container">
-          <a href="" class="nav__link">About</a>
-          <a href="" class="nav__link">Blog</a>
-          <a href="" class="nav__link">Pricing</a>
-          <a href="" class="nav__link">Contact Us</a>
-          <a href="" class="nav__link--login">Login</a>
-          <a href="" class="nav__link--sign-up modal__link--primary">Sign Up</a>
-          <button class="btn__menu" onclick="openMenu () ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="btn__menu--svg">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-          </button>
-        </div> 
-      </nav>
-      <div class="nav__links--close">
-        <button class="btn__menu btn__menu--close" onclick="closeMenu () ">
-          <svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="light___StyledCloseIcon-lj69nl-14 fASujC">
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-        </button>
-        <div class="nav__links">
-          <a href="" class="nav__link">About</a>
-          <a href="" class="nav__link">Blog</a>
-          <a href="" class="nav__link">Pricing</a>
-          <a href="" class="nav__link">Contact Us</a>
-          <a href="" class="nav__link--login">Login</a>
-          <a href="" class="nav__link--sign-up modal__link--primary">Sign Up</a>
-        </div>
+      <div class="logo__brand--container">
+        <img src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" class="logo" alt="">
+        <h1 class="brand">Treact</h1>
       </div>
+      <ul class="nav__links--container">
+        <li><a href="nav__link">About</a></li>
+        <li><a href="nav__link">Blog</a></li>
+        <li><a href="nav__link">Pricing</a></li>
+        <li><a href="nav__link">Contact Us</a></li>
+        <li><a href="nav__link">Login</a></li>
+        <li><a href="nav__link--signup nav__link--primary">Sign Up</a></li>
+      </ul>
+      <button class="btn__menu" onclick="openMenu () ">
+        <i class="fas fa bars"></i>
+      </button>
+      <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+            </li>
+            <li class="menu__list">
+              <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link no-cursor" onclick="closeMenu()">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="btn__menu--svg">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
     </section>
     <header class="templates">
       <div class="header">
