@@ -6,6 +6,15 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden ;
+}
+
 .row {
   width: 100%;
   max-width: 1200px;
@@ -66,7 +75,7 @@ NAVIGATION
 */
 
 .nav {
-  padding: 12px 48px;
+  padding: 12px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,26 +108,27 @@ li {
 }
 
 .nav__link {
+  margin-left: 8px;
+  padding: 8px 0;
   display: flex;
   color: grey;
   list-style: none;
   text-decoration: none;
   font-weight: 700;
-  padding: 0 8px;
 }
 
 .nav__link--login {
-  margin-left: 8px;
+  margin-left: 16px;
 }
 
 .nav__link--primary {
-  margin: 12px 0;
   padding: 8px 16px;
   border-radius: 24px;
   background-color: #7342d6;
   font-weight: 700;
   color: white;
 }
+
 .btn__menu {
   background-color: transparent;
   font-size: 40px;
@@ -220,7 +230,6 @@ TEMPLATES
   border-radius: 36px;
   background-color: #7342d6;
   color: white;
-
 }
 
 .h6 {
@@ -229,12 +238,12 @@ TEMPLATES
 }
 
 .templates__img--wrapper {
-  
   width: 70%;
 }
 
 .templates__img {
   width: 100%;
+  filter: grayscale(1) invert(1);
 }
 
 .template__picture {
@@ -259,8 +268,8 @@ FEATURES
 .features__container {
   width: 100%;
   max-width: 1200px;
-  margin: 40px;
-  padding: 40px;
+  margin: 40px 0;
+  padding: 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -303,7 +312,7 @@ SERVICES
   flex-wrap: wrap;
   width: calc(100%/3);
   margin: 12px 0;
-  padding: 0 12px;
+  padding: 0 
 }
 
 .service__description {
@@ -649,20 +658,18 @@ footer {
 
 .footer__links {
   width: 100%;
-  margin-top: 200px;
-  padding: 60px 180px;
+  padding: 60px 100px;
   background-color: #5d3ee6;
   display: flex;
+  justify-content: space-between;
 }
 
 .links {
-  color: white;
-  width: calc(100%/5);
   margin: 12px;
   padding: 12px;
+  width: calc(100%/5);
+  color: white;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -717,9 +724,27 @@ Small phones, tablets, large smartphones
 */
 
 @media (max-width: 768px) {
-  .nav__link {
+  
+  .nav__links {
     margin-right: 8px;
   }
+  
+  .nav__links--container {
+    display: none; 
+  }
+
+  .btn__menu {
+    display: block;
+  }
+
+  .footer__links {
+    flex-wrap: wrap;
+  }
+
+  .links {
+    width: calc(100%/3);
+  }
+
 }
 
 /* 
@@ -729,5 +754,12 @@ SMALL PHONES
 */
 
 @media (max-width: 480px) {
-
+  .btn__menu {
+    background-color: black;
+  }
+  .menu__backdrop {
+    opacity: 1;
+    visibility: visible;
+    background-color: black;
+  }
 }
