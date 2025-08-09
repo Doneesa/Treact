@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Treact</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/1cc347a3de.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"></script>
   <script src="index.js"></script>
 </head>
 
 <body>
   <div class="row">
-    <section class="nav">
+    <div class="nav">
       <div class="logo__brand--container">
         <img 
           src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" 
@@ -30,37 +30,35 @@
           <a href="#" class="nav__link nav__link--primary">Sign Up</a>
         </li>
       </ul>
-
-      <button class="btn__menu" onclick="openMenu () ">
-        <i class="fas fa bars"></i>
-      </button>
-      <div class="menu__backdrop">
-        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-          <i class="fas fa-times"></i>
-        </button>
-
-        <ul class="menu__links">
-          <li class="menu__list">
-            <a href="#footer" class="menu__link" onclick="closeMenu()">About</a>
-          </li>
-          <li class="menu__list">
-            <a href="#footer" class="menu__link" onclick="closeMenu()">Blog</a>
-          </li>
-          <li class="menu__list">
-            <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
-          </li>
-          <li class="menu__list">
-            <a href="#footer" class="menu__link" onclick="closeMenu()">Contact Us</a>
-          </li>
-          <li class="menu__list">
-            <a href="#footer" class="menu__link" onclick="closeMenu()">Login</a>
-          </li>
-          <li class="menu__list">
-            <a href="#footer" class="menu__link no-cursor" onclick="closeMenu()">Sign Up</a>
-          </li>
-        </ul>
     </div>
-  </section>
+    <button class="btn__menu " onclick="openMenu () ">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="menu__backdrop">
+      <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="menu__links">
+        <li class="menu__list">
+          <a href="#footer" class="menu__link" onclick="closeMenu()">About</a>
+        </li>
+        <li class="menu__list">
+          <a href="#footer" class="menu__link" onclick="closeMenu()">Blog</a>
+        </li>
+        <li class="menu__list">
+          <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+        </li>
+        <li class="menu__list">
+          <a href="#footer" class="menu__link" onclick="closeMenu()">Contact Us</a>
+        </li>
+        <li class="menu__list">
+          <a href="#footer" class="menu__link" onclick="closeMenu()">Login</a>
+        </li>
+        <li class="menu__list">
+          <a href="#footer" class="menu__link no-cursor" onclick="closeMenu()">Sign Up</a>
+        </li>
+      </ul>
+    </div>
     <header class="templates">
       <div class="header">
         <div class="templates__description">
