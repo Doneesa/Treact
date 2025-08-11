@@ -134,15 +134,12 @@ li {
 }
 
 .btn__menu {
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
   border: none;
+  background-color: transparent;
   font-size: 40px;
   text-align: center;
   color: #7342d6;
   display: none;
-  z-index: 1;
 }
 
 .menu__backdrop {
@@ -151,8 +148,8 @@ li {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;;
-  z-index: 2;
+  bottom: 0;
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,11 +158,10 @@ li {
   visibility: hidden;
 }
 
-.menu--open {
+.menu--open, .menu__backdrop {
+  opacity: 1;
+  visibility: visible;
 }
-
-.menu__backdrop 
-  
 
 .menu__links {
   display: flex;
@@ -285,7 +281,7 @@ FEATURES
 
 .features__header {
   text-align: center;
-  margin: 12px 80px;
+  margin: 12px 40px;
 }
 
 .features__title {
@@ -762,12 +758,5 @@ SMALL PHONES
 */
 
 @media (max-width: 480px) {
-  .btn__menu {
-    background-color: black;
-  }
-  .menu__backdrop {
-    opacity: 1;
-    visibility: visible;
-    background-color: black;
-  }
+   
 }
