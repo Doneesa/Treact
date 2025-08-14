@@ -23,6 +23,42 @@ body {
   flex-wrap: wrap;
 }
 
+.fadeInLeft {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInRight {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: fadeInRight 1s ease-out forwards;
+}
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .titles {
   margin: 12px 0;
   font-size: 24px;
@@ -356,6 +392,7 @@ QUALITY
 
 .quality__img--wrapper {
   position: relative;
+  width: 100%;
 }
 
 .quality__picture {
@@ -363,6 +400,10 @@ QUALITY
   padding: 12px;
 }
 
+
+.quality__img{
+  width: 100%
+}
 /*
 
 LAPTOP AND STEPS
@@ -407,7 +448,7 @@ LAPTOP AND STEPS
   width: 10%;
   max-width: 25%;
   height: 25px;
-  position: ;
+  
   bottom: -20px;
   right: -20px;
   width: 100px;
@@ -415,19 +456,10 @@ LAPTOP AND STEPS
   z-index: 1;
 }
 
-.quality__img{
-  width: 25%;
-  height: 25%;
-  z-index: 1;
-}
-/*
-
-
-
 .quality__square--img {
   width: 100%;
 }
-*/
+
 .laptop__pic--img {
   width: 100%;
 }
@@ -728,9 +760,27 @@ footer {
   padding: 12px;
   border-radius: 50px;
 }
+/*
+.nav,
+.templates,
+.quality,
+.values,
+.pricing {
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: fadeInLeft 1s ease-out forwards;
+}
 
-
-
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+*/
 /* 
 
 Small phones, tablets, large smartphones 
