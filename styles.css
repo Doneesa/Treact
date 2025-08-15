@@ -738,32 +738,6 @@ footer {
   padding: 12px;
   border-radius: 50px;
 }
-/*
-.nav,
-.templates,
-.quality,
-.values,
-.pricing {
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  transform: translateX(-100%);
-  animation: fadeInLeft 1s ease-out forwards;
-}
-
-@keyframes fadeInLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-*/
-/* 
-
-Small phones, tablets, large smartphones 
-
-*/
 
 @media (max-width: 768px) {
   
