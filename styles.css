@@ -425,42 +425,19 @@ LAPTOP AND STEPS
   width: 100%;
   margin: 16px 16px 0 16px;
   padding: 48px 32px 48px 32px;
-  z-index: 2;
-}
-
-.laptop__pic--wrapper::after {
-  content: "";
-  display: inline-block;
-  width: 24px;
-  background-image: url(https://www.bing.com/images/search?view=detailV2&ccid=lmwwuVsm&id=7B4AEE3B3D7ADA895B1076BCE4223C9B9E60700E&thid=OIP.lmwwuVsmLXfeun0tW5iwQwHaHa&mediaurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fpurple-white-polka-dot-tile-pattern-repeat-background-seamless-repeats-61338947.jpg&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.966c30b95b262d77deba7d2d5b98b043%3Frik%3DDnBgnps8IuS8dg%26pid%3DImgRaw%26r%3D0&exph=800&expw=800&q=purple+polka-dotted+white+square&form=IRPRST&ck=53E9A2C3F52B6788A500DD1FDB23A3B9&selectedindex=0&itb=0&cw=1559&ch=560&ajaxhist=0&ajaxserp=0&vt=0&sim=11);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-left: 12px;
-}
-
-.quality__square {
-  z-index: 1;
-  overflow: hidden;
-  /*position: relative;*/
-}
-
-.quality__square--wrapper {
-  width: 10%;
-  max-width: 25%;
-  height: 25px;
-  
-  bottom: -20px;
-  right: -20px;
-  width: 100px;
-  height: 100px;
-  z-index: 1;
-}
-
-.quality__square--img {
-  width: 100%;
 }
 
 .laptop__pic--img {
+  width: 100%;
+}
+
+.square--wrapper {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.square--img {
   width: 100%;
 }
 
@@ -698,6 +675,7 @@ PRICING
 FOOTER
 
 */
+
 footer {
   width: 100%;
 }
@@ -809,6 +787,24 @@ Small phones, tablets, large smartphones
     width: calc(100%/3);
   }
 
+  .laptop__steps--wrapper {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .laptop {
+    width: 100%;
+    align-items: center;
+  }
+  
+  .steps {
+    width: 100%;
+  }
+  
+  .laptop__pic--wrapper {
+    margin: 0;
+    padding-right: 12px;
+  }
 }
 
 /* 
