@@ -3,7 +3,8 @@
   margin: 0;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Inter', "Roboto", sans-serif;
+  color: #243e63;
 }
 
 html {
@@ -16,10 +17,10 @@ body {
 }
 
 .row {
+  margin: 0 auto;
   padding: 32px;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1280px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -63,12 +64,12 @@ body {
 .titles {
   margin: 12px 0;
   font-size: 24px;
-  color: #7342d6;
+  color: #6415ff;
 } 
 
 .titles__large {
   margin: 12px 0;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
 }
 
@@ -79,21 +80,20 @@ body {
 
 .para {
   margin: 12px 0;
-  color: grey;
   line-height: 2;
   font-weight: 700;
   font-size: 24px;
 }
 
 .purple {
-  color:  #7342d6;
+  color:  #6415ff;
 }
 
 .btn {
   margin: 12px 0;
   padding: 12px 24px;
   border-radius: 24px;
-  background-color: #7342d6;
+  background-color:  #6415ff;
   font-weight: 700;
   color: white;
   max-width: 140px;
@@ -102,9 +102,13 @@ body {
 
 a {
   margin-right: 24px;
-  color: black;
   text-decoration: none;
   font-weight: 700;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #6415ff;
 }
 
 .no-cursor {
@@ -118,7 +122,6 @@ NAVIGATION
 */
 
 .nav {
-  padding: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -139,7 +142,6 @@ NAVIGATION
 .brand {
   font-weight: 900;
   font-size: 24px;
-  color:#243e63;
 }
 
 .nav__links--container {
@@ -154,7 +156,6 @@ li {
   margin-left: 6px;
   padding: 6px 0;
   display: flex;
-  color: #243e63;
   list-style: none;
   text-decoration: none;
   font-weight: 700;
@@ -168,8 +169,11 @@ li {
 .nav__link--primary {
   padding: 12px;
   border-radius: 24px;
-  background-color: #7342d6;
+  background-color: #6415ff;
   font-weight: 700;
+  color: white;
+}
+.nav__link--primary:hover {
   color: white;
 }
 
@@ -178,7 +182,7 @@ li {
   background-color: transparent;
   font-size: 24px;
   text-align: center;
-  color: #7342d6;
+  color: #6415ff;
   display: none;
 }
 
@@ -234,22 +238,21 @@ TEMPLATES
 */
 
 .templates {
+  padding: 80px 0;
   display: flex;
-  flex-wrap: wrap;
-  margin: 36px;
 }
 
 .templates__description {
-  padding: 12px 0 12px 24px;
+  padding:  0 9px;
   display: flex;
   flex-direction: column;
+  width: 40%;
 }
 
 .templates__para {
-  margin: 12px 0;
-  padding-right: 12px;
+  margin: 20px 0;
   line-height: 2;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .cta-container {
@@ -272,17 +275,13 @@ TEMPLATES
   padding: 12px 24px;
   border: none;
   border-radius: 36px;
-  background-color: #7342d6;
+  background-color: #6415ff;
   color: white;
 }
 
 .h6 {
- margin: 12px 0;
-  color: grey;
-}
-
-.template__picture {
-  width: 100%;
+  margin: 12px 0;
+  filter: grayscale(1) invert(1);
 }
 
 .templates__img--wrapper {
@@ -292,6 +291,10 @@ TEMPLATES
 .templates__img {
   width: 100%;
   filter: grayscale(1) invert(1);
+}
+
+.template__picture {
+  width: 60%;
 }
 
 .template__img--wrapper {
@@ -327,7 +330,7 @@ FEATURES
 .features__title {
   margin: 24px 0;
   font-size: 24px;
-  color: #7342d6;
+  color: #6415ff;
 }
 
 .features__para {
@@ -568,10 +571,6 @@ PRICING
   border-radius: 12px;
   color: white;
 }
-  
-.orange {
-  position: relative;
-}
 
 .orange::before {
   content: "";
@@ -604,8 +603,7 @@ PRICING
 }
 
 .pricing__card--term {
-  margin: 12px;
-  color: grey;
+  margin: 12px;;
 }
 
 .term__blue {
@@ -658,7 +656,7 @@ PRICING
   border-radius: 56px;
   background-color: white;
   border: none;
-  color: purple;
+  color: #6415ff;
   font-weight: 700;
 }
 
@@ -689,7 +687,7 @@ footer {
 .footer__links {
   width: 100%;
   padding: 60px 100px;
-  background-color: #5d3ee6;
+  background-color: #6415ff;
   display: flex;
   justify-content: space-between;
 }
@@ -719,8 +717,13 @@ footer {
   font-weight: 300;
 }
 
+.link__anchor:hover {
+  color: white;
+  text-decoration:  2px solid underline;
+}
+
 .footer__info {
-  background-color: #5d3ee6;
+  background-color: #6415ff;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -762,14 +765,20 @@ footer {
   .templates {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
   }
-
+  
   .templates__description {
-    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .templates__img--wrapper {
+    width: 100%;
+    padding: 0;
   }
 
   .template__picture {
-    flex-wrap: wrap;
+    width: 100%;
   }
 
   .footer__links {
