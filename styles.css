@@ -23,6 +23,7 @@ body {
   max-width: 1280px;
   display: flex;
   flex-wrap: wrap;
+  letter-spacing: 1.5px;
 }
 
 .fadeInLeft {
@@ -70,7 +71,7 @@ body {
 .titles__large {
   margin: 12px 0;
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .list__title {
@@ -229,16 +230,17 @@ li {
   color: white;
 }
 
-
 /*
 
 TEMPLATES
 
 */
 
-.templates {
+.header {
   padding: 80px 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .titles__large__templates {
@@ -247,10 +249,9 @@ TEMPLATES
   font-weight: 700;
 }
 .templates__description {
-  padding:  0 9px;
+  width: 40%;
   display: flex;
   flex-direction: column;
-  width: 40%;
 }
 
 .templates__para {
@@ -263,6 +264,7 @@ TEMPLATES
   margin: 12px 68px 48px 12px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   border: none;
   border-radius: 36px;
   overflow: hidden;
@@ -271,11 +273,13 @@ TEMPLATES
 }
 
 .email-input {
+
   margin-left: 24px;
   border: none;
 }
 
 .cta-button {
+  margin: 6px;
   padding: 12px 24px;
   border: none;
   border-radius: 36px;
@@ -303,7 +307,6 @@ TEMPLATES
 
 .template__img--wrapper {
   width: 100%;
-  padding: 32px 0;
 }
 
 .template__img {
@@ -351,20 +354,18 @@ SERVICES
 
 .services {
   display: flex;
-  flex-wrap: wrap;
   margin: 24px 0;
+  max-width: 800px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .service {
   display: flex;
-  flex-wrap: wrap;
+
   width: calc(100%/3);
   margin: 12px 0;
   padding: 0 
-}
-
-.service__description {
-  margin: 12px;
 }
 
 .service__icon--wrapper {
@@ -376,6 +377,10 @@ SERVICES
   border-radius: 50px;
   margin: 24px;
   padding: 24px;
+}
+
+.service__description {
+  margin: 12px;
 }
 
 .service__description {
@@ -766,9 +771,9 @@ footer {
     display: block;
   }
 
-  .templates {
+  .header {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     text-align: center;
   }
   
@@ -783,6 +788,10 @@ footer {
 
   .template__picture {
     width: 100%;
+  }
+
+  .services {
+    flex-wrap: wrap;
   }
 
   .footer__links {
