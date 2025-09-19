@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
   padding: 32px;
   width: 100%;
-  max-width: 1280px;
+  max-width: 
   display: flex;
   flex-wrap: wrap;
   letter-spacing: 1.5px;
@@ -147,6 +147,7 @@ NAVIGATION
 
 .nav__links--container {
   display: flex;
+  align-items: center;
 }
 
 li {
@@ -770,7 +771,7 @@ TESTIMONIALS
 
 .testimonials {
   padding: 96px 0;
-  width: 100%;
+  width: 100%;  
   display: flex;
 }
 
@@ -794,8 +795,94 @@ TESTIMONIALS
 }
 
 .description__para {
-  margin: 24px;
+  margin-top: 24px;
   font-size: 18px;
+}
+
+.client__testimonial {
+  margin-top: 56px;
+}
+
+.fa-star {
+  color: #fabf2a;
+}
+
+.review__title {
+  margin: 16px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #243E63;
+}
+
+.review {
+  margin: 16px, 0, 40, ;
+  font-size: 16px;
+  color: #4A5568;
+  line-height: 2;
+}
+
+.client__img--wrapper {
+  width: 80px;
+  height: 80px;
+}
+
+.client__and--arrows {
+  display: flex;
+}
+
+.client__and--arrows{
+  justify-content: space-between;
+}
+
+.client {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.client__img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.name__and--role {
+  margin: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #243E63;
+}
+
+.role {
+  font-size: 16px;
+  color: #7C8BA1;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  width: 48px;
+  height: 48px;
+  margin: 0, 12px;
+  padding: 16px;
+  border: none;
+  border-radius: 50px;
+  background-color: #EDF2F7;
+}
+
+.fa-arrow-left {
+  color: #6415ff;
+}
+
+.fa-arrow-right {
+  color: #6415ff;
 }
 
 /*
