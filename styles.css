@@ -770,7 +770,7 @@ TESTIMONIALS
 */
 
 .testimonials {
-  padding: 96px 0;
+  padding: 80px 0;
   width: 100%;  
   display: flex;
 }
@@ -835,7 +835,7 @@ TESTIMONIALS
 }
 
 .client {
-  width: 50%;
+  width: 70%;
   display: flex;
   align-items: center;
 }
@@ -846,12 +846,13 @@ TESTIMONIALS
 }
 
 .name__and--role {
-  margin: 32px;
+  margin: 32px 0 32px 32px;
   display: flex;
   flex-direction: column;
 }
 
 .name {
+  margin: 0 0 8px 0;
   font-size: 20px;
   font-weight: 700;
   color: #243E63;
@@ -895,38 +896,60 @@ WORLD CARD
 .world__card {
   width: 100%;
   max-width: 1200px;
-  padding: 96 0;
+  padding: 80px 0;
+  margin: 0 auto;
 }
 
 .world__card--wrapper {
-  background-color: #6415ff;
+  padding: 96px 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 48px 0;
-  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: white;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  background-color: #6415ff;
 }
 
 .world__text {
+  width: 75%;
   margin: 0 12px;
-  padding: 0 12px;
-  font-size: 32px;
+  padding: 0 96px;
+  font-size: 30px;
   font-weight: 700;
-  color: #7C8BA1;
+  color: #F7FAFC;
   text-align: center;
 }
 
 .world__buttons {
-  margin: 24px 0;
+  margin: 24px 0 0;
   display: flex;
   justify-content: center;
 }
+
+.world__btn {
+  margin: 16px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 50px;
+  background-color: #F56565;
+  font-weight: 700;
+  font-size: 16px;
+  color: #F7FAFC;
+}
+
+.world__btn--contact {
+  margin: 16px;
+  padding: 16px 32px;
+  border: solid 1px #F7FAFC;
+  border-radius: 50px;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  color: #F7FAFC;
+}
+
 /*
 
 FOOTER
@@ -935,6 +958,10 @@ FOOTER
 
 footer {
   width: 100%;
+}
+
+.footer__row {
+  margin: 0 87px;
 }
 
 .footer__links {
@@ -985,6 +1012,10 @@ footer {
 .footer__brand {
   font-size: 24px;
   color: white;
+}
+
+.trademarks {
+  color: #CBD5E0;
 }
 
 .footer__socials {
