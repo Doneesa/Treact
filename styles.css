@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
   padding: 32px;
   width: 100%;
-  max-width: 
+  max-width:100%;
   display: flex;
   flex-wrap: wrap;
   letter-spacing: 1.5px;
@@ -870,7 +870,7 @@ TESTIMONIALS
 .arrow {
   width: 48px;
   height: 48px;
-  margin: 0, 12px;
+  margin: 0 12px;
   padding: 16px;
   border: none;
   border-radius: 50px;
@@ -878,6 +878,7 @@ TESTIMONIALS
 }
 
 .fa-arrow-left {
+  width: 12px;
   color: #6415ff;
 }
 
@@ -885,6 +886,47 @@ TESTIMONIALS
   color: #6415ff;
 }
 
+/*
+
+WORLD CARD
+
+*/
+
+.world__card {
+  width: 100%;
+  max-width: 1200px;
+  padding: 96 0;
+}
+
+.world__card--wrapper {
+  background-color: #6415ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.world__text {
+  margin: 0 12px;
+  padding: 0 12px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #7C8BA1;
+  text-align: center;
+}
+
+.world__buttons {
+  margin: 24px 0;
+  display: flex;
+  justify-content: center;
+}
 /*
 
 FOOTER
