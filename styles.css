@@ -323,7 +323,7 @@ FEATURES
 
 .features__container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 120;
   margin: 40px 0;
   padding: 40px 0;
   display: flex;
@@ -1023,14 +1023,14 @@ footer {
 }
 
 .socials {
-  margin: 6px;
-  padding: 6px;
+  margin: 8px;
+  padding: 8px;
 }
 
 .fa-brands {
   background-color: white;
   padding: 16px;
-  border-radius: 50px;
+  border-radius: 100px;
 }
 
 @media (max-width: 768px) {
