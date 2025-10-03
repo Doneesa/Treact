@@ -18,7 +18,7 @@ body {
 
 .row {
   margin: 0 auto;
-  padding: 32px 32px 32px 0;
+  padding: 32px 32px 0 32px;
   /*width: 100%;*/
   display: flex;
   flex-wrap: wrap;
@@ -270,12 +270,12 @@ TEMPLATES
 .header {
   padding: 96px 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: space-between;
+
 }
 
 .titles__large--templates {
-  margin-bottom: 12px;
   font-size: 36px;
   font-weight: 700;
 }
@@ -286,13 +286,14 @@ TEMPLATES
 }
 
 .templates__para {
-  margin: 20px 0;
-  line-height: 2;
+  margin: 32px 0;
+  line-height: 1.5;
   font-size: 16px;
 }
 
 .cta-container {
-  margin: 12px 68px 48px 12px;
+  margin-bottom: 80px;
+  padding: 20px 192px 20px 32px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -305,17 +306,22 @@ TEMPLATES
 
 .email-input {
 
-  margin-left: 24px;
+  /*margin-left: 24px;*/
   border: none;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
 .cta-button {
-  margin: 6px;
-  padding: 12px 24px;
+  margin: 8px;
+  padding: 16px 32px;
   border: none;
   border-radius: 36px;
+  font-size: 16px;
+  font-weight: 700;
   background-color: #6415ff;
   color: white;
+  letter-spacing: 1px;
 }
 
 .h6 {
@@ -323,8 +329,8 @@ TEMPLATES
   filter: grayscale(1) invert(1);
 }
 
-.templates__img--wrapper {
-  width: 70%;
+.template__img--wrapper {
+  width: 40%;
 }
 
 .templates__img {
@@ -333,7 +339,7 @@ TEMPLATES
 }
 
 .template__picture {
-  width: 60%;
+  width: 50%;
 }
 
 .template__img--wrapper {
