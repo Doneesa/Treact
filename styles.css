@@ -406,6 +406,8 @@ SERVICES
 
 .service__icon--wrapper {
   font-size: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 .icon {
