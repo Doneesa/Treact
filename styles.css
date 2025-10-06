@@ -292,58 +292,55 @@ TEMPLATES
 }
 
 .cta-container {
-  margin-bottom: 80px;
-  padding: 20px 192px 20px 32px;
+  width: 100%;
+  max-width: 448px;
+  height: 68px;
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  border: none;
-  border-radius: 36px;
-  overflow: hidden;
-  background-color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .email-input {
-
-  /*margin-left: 24px;*/
-  border: none;
+  width: 100%;
+  border-radius: 500px;
+  padding: 20px 192px 20px 32px;
   font-size: 16px;
-  letter-spacing: 1px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 .cta-button {
+  z-index: 2;
   margin: 8px;
   padding: 16px 32px;
+  height: calc(100%-16px);
+  border-radius: 500px;
+  width: 160px;
   border: none;
-  border-radius: 36px;
-  font-size: 16px;
-  font-weight: 700;
   background-color: #6415ff;
+  font-size: 16px;
+  font-weight: 500;
   color: white;
-  letter-spacing: 1px;
 }
 
 .h6 {
-  margin: 12px 0;
-  filter: grayscale(1) invert(1);
-}
-
-.template__img--wrapper {
-  width: 40%;
+  margin-top: 80px;
+  padding-right: 64px;
+  color: #a0aec0;
 }
 
 .templates__img {
   width: 100%;
   filter: grayscale(1) invert(1);
+  margin-top: 16px;
+  padding-right: 64px;  
 }
 
 .template__picture {
-  width: 50%;
-}
-
-.template__img--wrapper {
-  width: 100%;
+  width: 60%;
 }
 
 .template__img {
@@ -359,8 +356,7 @@ FEATURES
 .features__container {
   width: 100%;
   max-width: 120;
-  margin: 40px 0;
-  padding: 40px 0;
+  padding: 96px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -368,12 +364,12 @@ FEATURES
 
 .features__header {
   text-align: center;
-  margin: 12px 40px;
+  letter-spacing: 1px;
 }
 
 .features__title {
-  margin: 24px 0;
-  font-size: 24px;
+  margin: 16px 0;
+  font-size: 16px;
   color: #6415ff;
 }
 
