@@ -19,9 +19,9 @@ body {
 .row {
   margin: 0 auto;
   padding: 32px 32px 0 32px;
-  /*width: 100%;*/
   display: flex;
   flex-wrap: wrap;
+  letter-spacing: 1px;
 }
 
 .fadeInLeft {
@@ -368,15 +368,21 @@ FEATURES
 }
 
 .features__title {
-  margin: 16px 0;
+  margin: 0;
   font-size: 16px;
   color: #6415ff;
 }
 
+.features__sub-title {
+  margin: 16px 0;
+}
+
 .para__features {
-  padding: 12px 200px;
-  line-height: 2;
+  padding: 0 180px;
+  line-height: 1.5;
   font-size: 18px;
+  font-weight: 500;
+  color: #7C8BA1;
 }
 
 /*
@@ -387,18 +393,15 @@ SERVICES
 
 .services {
   display: flex;
-  margin: 24px 0;
-  max-width: 800px;
+  margin: 32px 0;
   width: 100%;
   flex-wrap: wrap;
 }
 
 .service {
   display: flex;
-
   width: calc(100%/3);
-  margin: 12px 0;
-  padding: 0 
+  padding: 32px 24px;
 }
 
 .service__icon--wrapper {
@@ -406,6 +409,7 @@ SERVICES
 }
 
 .icon {
+  
   border: solid 4px lightgrey;
   border-radius: 50px;
   margin: 24px;
