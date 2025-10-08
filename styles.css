@@ -12,11 +12,12 @@ html {
 }
 
 body {
-  max-width: 100vw;
+  max-width: 1200PX;
   overflow-x: hidden ;
 }
 
 .row {
+  max-width: 1200PX;
   margin: 0 auto;
   padding: 32px 32px 0 32px;
   display: flex;
