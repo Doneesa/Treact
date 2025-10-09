@@ -101,6 +101,11 @@ body {
   color: #F7FAFC;
 }
 
+.btn:hover {
+  opacity: 0.8;
+  transition: opacity 300ms ease;
+}
+
 a {
   font-size: 24px;
   text-decoration: none;
@@ -306,12 +311,20 @@ TEMPLATES
 .email-input {
   width: 100%;
   border-radius: 500px;
+  opacity: border 0.3;
   padding: 20px 192px 20px 32px;
   font-size: 16px;
   position: absolute;
   top: 0;
   bottom: 0;
   z-index: 1;
+  border: 2px solid rgba(0, 0, 0, 0.2); /* initial low opacity */
+  transition: border-color 0.5s ease;   /* smooth transition */
+}
+
+.email-input:hover {
+  transition: border opacity 300ms ease;
+  border-color: rgba(0, 0, 0, 1); /* full opacity on hover */
 }
 
 .cta-button {
@@ -358,7 +371,7 @@ FEATURES
 .features__container {
   width: 100%;
   max-width: 120;
-  /*margin: 0 276.5px;*/
+
   padding: 96px 0;
   display: flex;
   flex-direction: column;
@@ -401,12 +414,14 @@ SERVICES
   margin: 32px 0;
   width: 100%;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .service {
   display: flex;
   /*width: calc(100%/3);*/
-  max-width: 350px;
+  max-width: 341px;
   padding: 32px 24px;
 }
 
@@ -658,13 +673,11 @@ PRICING
 }
 
 .plans__para {
-  padding: 12px;
   width: 60%;
   line-height: 1.5;
 }
 
 .pricing__cards {
-  padding: 16px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -674,7 +687,7 @@ PRICING
   width: 100%;
   max-width: 385px;
   margin: 64px 32px 0 0;
-  border: 1px solid rgba(211, 211, 211, 0.5); /* Light grey with 50% opacity */
+  border: 0.5px solid rgba(211, 211, 211, 0.5); /* Light grey with 50% opacity */
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 
@@ -785,7 +798,7 @@ PRICING
 
 .pricing__package--description {
   margin-bottom: 24px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .pricing__package--list-item {
@@ -806,7 +819,7 @@ PRICING
 
 .btn__green {
   margin: 24px;
-  padding: 16px 32px;
+  padding: 16px 64px;
   border-radius: 56px;
   background: linear-gradient(to right, teal, #00d1b2);
   border: none;
@@ -815,13 +828,13 @@ PRICING
 }
 
 .box__blue {
-  border: none;
-  background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%)
+  background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+  border-color:  rgb(76, 81, 191);
 }
 
 .btn__blue {
   margin: 24px;
-  padding: 16px 32px;
+  padding: 16px 64px;
   border-radius: 56px;
   background-color: white;
   border: none;
@@ -831,7 +844,7 @@ PRICING
 
 .btn__orange {
   margin: 24px;
-  padding: 16px 32px;
+  padding: 16px 64px;
   border-radius: 56px;
   background: linear-gradient(to right, rgb(245, 101, 101) 0% , rgb(254, 178, 178) 100%);
   border: none;
