@@ -639,7 +639,7 @@ VALUES
 }
 
 .list__title {
-  /*margin: 0 0 0 12px;*/
+  margin-left: 12px;
   font-size: 20px;
 }
 
@@ -997,57 +997,52 @@ WORLD CARD
 .world__card {
   width: 100%;
   max-width: 1200px;
-  padding: 80px 0;
+  padding: 96px 0;
   margin: 0 auto;
+  display: flex;
 }
 
 .world__card--wrapper {
   padding: 96px 0;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: #6415ff;
 }
 
 .world__text {
-  width: 75%;
-  padding: 0 96px;
+  width: 45%;
   font-size: 30px;
   font-weight: 700;
   color: #F7FAFC;
-  text-align: center;
+  text-align: left;
 }
 
 .world__buttons {
-  margin: 24px 0 0;
   display: flex;
   justify-content: center;
 }
 
 .world__btn {
-  margin: 1px 32px 1px;
-  padding: 16px 32px;
+  margin: 1px 32px 1px 1px;
+  padding: 20px 40px;
   border: none;
   border-radius: 50px;
   background-color: #F56565;
   font-weight: 700;
   font-size: 16px;
   color: #F7FAFC;
+  transition: all 450ms ease-in-out;
 }
 
 .world__btn:hover {
-  background-color: #ff7b7b;
-  background-color:#ff4c4c
-  transition: all 450ms ease-in-out;
+  background-color: #e53e3e
 }
 
 .world__btn--contact {
   margin: 1px;
-  padding: 16px 32px;
+  padding: 20px 40px;
   border: solid 1px #F7FAFC;
   border-radius: 50px;
   background-color: transparent;
@@ -1070,28 +1065,26 @@ FOOTER
 
 footer {
   width: 100%;
-  margin: 0 0 -32px;
   background-color: #6415ff;
+  margin-top: 96px;
 }
 
 .footer__container {
-  padding: 80px 32px;
+  padding: 96px 64px 96px 64px;
 }
 
 .footer__links {
   width: 100%;
+  padding-bottom: 112px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: auto;
-  padding-bottom: 64px;
 }
 
 .links {
-  width: calc(100%/5);
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .link__type {
@@ -1112,16 +1105,20 @@ footer {
 }
 
 .link__anchor:hover {
-  color: white;
   text-decoration:  2px solid underline;
+  color: white;
 }
 
 .footer__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 32px;
   background-color: #6415ff;
+}
+
+.footer__logo--brand {
+  margin: 0px;
+  padding: 0px;
 }
 
 .footer__logo {
@@ -1150,7 +1147,7 @@ footer {
 }
 
 .socials {
-  margin: 8px;
+  margin-left: 8px;
   padding: 8px;
   background-color: #F7FAFC;
   border-radius: 100px;
