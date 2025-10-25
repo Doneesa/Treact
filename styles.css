@@ -173,6 +173,30 @@ li {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 1px;
+  position: relative;
+}
+
+#highlights:before,
+#highlights:after {
+  background: url('assets/assets/wave.svg');
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 12vw;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#highlights:before {
+  top: 1px;
+  transform: translateY(-100%);
+}
+
+#highlights:after {
+  bottom: 1px;
+  background-repeat: no-repeat;
+  transform: translateY(100%) rotate(180deg);
 }
 
 .link__hover-effect:after {
@@ -635,9 +659,6 @@ VALUES
   color: rgb(39, 103, 74);
 }
 
-.value__icon-1 {
-}
-
 .list__title {
   margin-left: 12px;
   font-size: 20px;
@@ -785,10 +806,6 @@ PRICING
   font-size: 48px;
   font-weight: 700;
   color: #F7FAFC;
-}
-
-.pricing__card--term {
-
 }
 
 .term__blue {
