@@ -428,12 +428,12 @@ FEATURES
 }
 
 .para__features {
-  max-width: 1030px;
+  margin-bottom: 32px;
   padding: 0 180px;
   align-items: center;
   line-height: 1.5;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .service__para {
@@ -481,7 +481,8 @@ SERVICES
 
 .service__list--title {
   margin: 0 0 0 0;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 900;
 }
 
 .service__para {
@@ -668,7 +669,6 @@ VALUES
 }
 
 .list__title {
-  margin-left: 12px;
   font-size: 20px;
 }
 
