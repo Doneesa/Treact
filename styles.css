@@ -18,9 +18,8 @@ body {
 }
 
 .row {
-  max-width: 1280PX;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 32px 0 0 0;
   display: flex;
   flex-wrap: wrap;
   letter-spacing: 2px;
@@ -127,6 +126,7 @@ NAVIGATION
 */
 
 .nav {
+  padding: 32px 32px 0 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1176,8 +1176,9 @@ footer {
   color: inherit;
 }
 
+
+
 @media (max-width: 768px) {
-  
   .nav__links {
     margin-right: 8px;
   }
