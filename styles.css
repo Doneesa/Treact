@@ -18,6 +18,7 @@ body {
 }
 
 .row {
+  padding: 0 32px 0 32px;
   max-width: 1280px;
   margin: 0 auto;
   display: flex;
@@ -1177,6 +1178,15 @@ footer {
 }
 
 
+@media (max-width:1280px) {
+  .templates__img--wrapper {
+    justify-content: flex-end;
+  }
+
+  .template__img {
+    max-width: 70%;
+  }
+}
 
 @media (max-width: 768px) {
   .nav__links {
