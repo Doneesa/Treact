@@ -18,9 +18,9 @@ body {
 }
 
 .row {
-  padding: 0 32px 0 32px;
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 32px;
   display: flex;
   flex-wrap: wrap;
   letter-spacing: 1.5px;
@@ -98,7 +98,7 @@ body {
   background-color:  #6415ff;
   font: 14px;
   font-weight: 700;
-  color: #F7FAFC;
+  color: #FFF;
 }
 
 .btn:hover {
@@ -530,7 +530,7 @@ LAPTOP AND STEPS
 */
 
 .laptop__steps--box {
-  padding: 96px 0;
+  padding: 96px 5px;
 }
 
 .laptop__steps--wrapper {
@@ -539,6 +539,8 @@ LAPTOP AND STEPS
 
 .laptop {
   width: 50%;
+  display: flex;
+  justify-self: center;
   align-items: center;
 }
 
@@ -557,19 +559,27 @@ LAPTOP AND STEPS
   flex-direction: column;
 }
 
+.steps__title {
+  margin-bottom: 0;
+}
+
+.steps__title--large {
+  margin: 16px 0;
+}
+
 .steps__container {
   display: flex;
   flex-direction: column;
 }
 
 .step__container {
-  margin-top: 16px;
-  padding-right: 36px;
+  max-width: 65%;
+  margin-top: 32px;
   display: flex;
 }
 
 .step__number {
-  margin-right: 16px;
+  margin-right: 24px;
   font-size: 36px;
   font-weight: 700;
   color: #CBD5E0;
@@ -581,8 +591,12 @@ LAPTOP AND STEPS
   flex-direction: column;
 }
 
+.list__title {
+  font-size: 20px;
+}
+
 .step__para {
-  margin-top: 12px;
+  margin-top: 16px;
   line-height: 2;
   font-size: 14px;
   color: #718096;
@@ -600,14 +614,20 @@ VALUES
 }
 
 .values__description {
+  padding: 32px 64px 32px 0;
   flex-direction: column;
   width: 50%;
 }
+
+.values__titles--large {
+  margin: 16px 0 32px;
+}
+
 .values__para {
   margin: 32px 0 0;
   line-height: 1.5;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   color: #7C8BA1;
 }
 
@@ -620,7 +640,7 @@ VALUES
 }
 
 .value__card--2 {
-  margin: 32px 0 0;
+  margin: 32px 32px 0 0;
 }
 
 .value__card--heading {
@@ -652,18 +672,25 @@ VALUES
   color: rgb(39, 103, 74);
 }
 
+.value__list--title {
+  margin: 0 0 0 16px;
+  font-size: 20px;
+}
+
 .value__para {
-  margin: 10px 0 0 0;
+  margin: 16px 0 0 0;
   line-height: 1.5;
   font-size: 16px;
 }
 
 .btn__values {
-  margin: 36px 0 0 0;
+  margin: 48px 0 0 0;
 }
 
 .values__picture {
   width: 50%;
+  display: flex;
+  justify-content: start;
 }
 
 .values__pic {
