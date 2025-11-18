@@ -12,14 +12,13 @@ html {
 }
 
 body {
-  max-width: 1280px;
   /*max-width: 100vw;*/
   overflow-x: hidden ;
+  margin: 0 auto;
+  max-width: 1280px;
 }
 
 .row {
-  /*max-width: 1280px;*/
-  margin: 0 auto;
   padding: 0 32px;
   display: flex;
   align-items: center;
@@ -723,15 +722,17 @@ PRICING
 }
 
 .pricing__cards {
+  padding-bottom: 96px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 32px;
 }
 
 .pricing__card {
-  width: 100%;
+  width: calc((100% - 64px) / 3);
   max-width: 385px;
-  margin: 64px 32px 0 0;
+  margin: 64px 0 0 0;
   border: 0.5px solid rgba(211, 211, 211, 0.5); /* Light grey with 50% opacity */
   border-radius: 24px;
   overflow: hidden;
@@ -904,7 +905,7 @@ TESTIMONIALS
 */
 
 .testimonials {
-  padding: 80px 0;
+  padding: 96px 0;
   width: 100%;  
   display: flex;
   align-items: center;
@@ -950,7 +951,7 @@ TESTIMONIALS
 }
 
 .review {
-  margin: 16px, 0, 40, ;
+  margin: 16px, 0, 40px, 0;
   font-size: 16px;
   color: #4A5568;
   line-height: 2;
@@ -1034,6 +1035,7 @@ WORLD CARD
   padding: 96px 0;
   margin: 0 auto;
   display: flex;
+  flex-wrap: nowrap;
 }
 
 .world__card--wrapper {
