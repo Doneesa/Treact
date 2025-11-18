@@ -18,10 +18,11 @@ body {
 }
 
 .row {
-  max-width: 1280px;
+  /*max-width: 1280px;*/
   margin: 0 auto;
   padding: 0 32px;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   letter-spacing: 1.5px;
 }
@@ -703,16 +704,17 @@ PRICING
 
 */
 
-.pricing__title--large {
-  margin: 16px 0;
-}
-
 .plans {
+  padding: 96px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: 1A202C;
+  color: #1A202C;
+}
+
+.pricing__title--large {
+  margin: 16px 0;
 }
 
 .plans__para {
