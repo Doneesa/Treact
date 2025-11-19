@@ -23,7 +23,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
 }
 
 .fadeInLeft {
@@ -305,8 +305,6 @@ TEMPLATES
   padding: 96px 0;
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
-
 }
 
 .titles__large--templates {
@@ -388,6 +386,12 @@ TEMPLATES
 
 .template__picture {
   width: 60%;
+  display: flex;
+  justify-content: end;
+}
+
+.template__img--wrapper {
+  width: 70%;
 }
 
 .template__img {
@@ -432,8 +436,9 @@ FEATURES
   padding: 0 180px;
   align-items: center;
   line-height: 1.5;
+  color: #7C8BA1;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .service__para {
@@ -505,7 +510,17 @@ QUALITY
 }
 
 .quality__titles--large {
-  max-width: 75%
+  max-width: 75%;
+  font-weight: 900;
+}
+
+.quality__para {
+  line-height: 1.5;
+  color: #7C8BA1;
+}
+
+.quality__btn {
+  margin-bottom: 0;
 }
 
 .quality__img--wrapper {
@@ -593,10 +608,11 @@ LAPTOP AND STEPS
 
 .list__title {
   font-size: 20px;
+  font-weight: 500;
 }
 
 .step__para {
-  margin-top: 16px;
+  margin-top: 12px;
   line-height: 2;
   font-size: 14px;
   color: #718096;
@@ -1197,6 +1213,11 @@ footer {
   color: inherit;
 }
 
+/*
+
+1280px LAPTOPS
+
+*/
 
 @media (max-width:1280px) {
   .template__img--wrapper {
@@ -1208,6 +1229,12 @@ footer {
     max-width: 70%;
   }
 }
+
+/*
+
+TABLETS AND SMALL SCREENS
+
+*/
 
 @media (max-width: 768px) {
   .nav__links {
