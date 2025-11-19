@@ -1100,12 +1100,14 @@ FOOTER
 */
 
 footer {
+  max-width: 100vw;
   width: 100%;
   background-color: #6415ff;
   margin-top: 96px;
 }
 
 .footer__container {
+  max-width: 100vw;
   padding: 96px 64px 96px 64px;
 }
 
