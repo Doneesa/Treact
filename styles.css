@@ -998,7 +998,7 @@ TESTIMONIALS
 }
 
 .name__and--role {
-  margin: 32px 0 32px 32px;
+  margin: 32px 0 0 32px;
   display: flex;
   flex-direction: column;
 }
