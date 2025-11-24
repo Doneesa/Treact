@@ -1150,6 +1150,7 @@ footer {
 .link {
   list-style: none;
   margin: 12px 0;
+  position: relative;
 }
 
 .link__anchor {
@@ -1159,8 +1160,20 @@ footer {
 }
 
 .link__anchor:hover {
-  text-decoration:  2px solid underline;
+  /*text-decoration:  2px solid underline;*/
   color: white;
+}
+
+.link__anchor:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  transition: all 300ms ease;
+  opacity: o;
 }
 
 .footer__info {
