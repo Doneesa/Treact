@@ -121,6 +121,25 @@ a:hover {
   cursor: no-drop;
 }
 
+.underline {
+  position: relative;
+  display: inline-block;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background: white;
+  transition: width 300ms ease;
+}
+
+.underline:hover::after {
+  width: 100%;
+}
+
 /*
 
 NAVIGATION
