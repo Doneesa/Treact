@@ -533,8 +533,8 @@ QUALITY
 }
 
 .quality__titles--large {
-  max-width: 75%;
-  margin: 16px;
+  max-width: 100%;
+  margin: 16px 0px;
   font-weight: 900;
 }
 
@@ -1284,73 +1284,22 @@ footer {
 }
 
 @media (max-width: 1024px) {
-  .templates__row {
-    flex-direction: column;
-    margin: 0 150px;
-  }
-
-  .templates__description {
-    width: 80% ;
-    justify-content: center ;
-  }
-
-  .template__img {
-    max-width: 70%;
-  }
-
-  .titles__large--templates {
-    font-size: 30px;
-  }
-
-  .templates__para {
-    font-size: 16px;
-    margin: 20px 0;
-  }
-
-  .p {
-    text-align: center;
-    margin-top: 42px;
-  }
-
-  .template__picture {
-    width: 100%;
-  }
-
-  .templates__img {
-    padding: 0;
-  }
-
-  .template__picture {
-    margin-top: 56px;
-  }
-
-  .template__img {
-    width: 100%;
-    margin: 0 auto;
-    justify-content: center;
-  }
-
-}
-
-/*
-
-TABLETS AND SMALL SCREENS
-
-*/
-
-@media (max-width: 768px) {
-  .nav__links {
-    margin-right: 8px;
-  }
   
   .nav__links--container {
     display: none; 
   }
-
+  
   .btn__menu {
     display: block;
   }
-
+  .nav__links--container {
+    display: none; 
+  }
+  
+  .btn__menu {
+    display: block;
+  }
+  
   .header {
     display: flex;
     flex-direction: column;
@@ -1366,9 +1315,96 @@ TABLETS AND SMALL SCREENS
     padding: 0;
   }
 
+  .email-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+  }
+  
   .template__picture {
     width: 100%;
   }
+  
+  .templates__row {
+    flex-direction: column;
+    margin: 0 150px;
+  }
+  
+  .templates__description {
+    width: 80% ;
+    justify-content: center ;
+  }
+  
+  .template__img {
+    max-width: 70%;
+  }
+  
+  .titles__large--templates {
+    font-size: 30px;
+  }
+  
+  .templates__para {
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  
+  .p {
+    text-align: center;
+    margin-top: 42px;
+  }
+
+  .template__picture {
+    width: 100%;
+  }
+
+  .templates__img {
+    padding: 0;
+  }
+
+  .template__picture {
+    margin-top: px;
+  }
+
+  .template__img {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .titles__large {
+    font-size: 36px;
+  }
+
+  .quality__para {
+    font-size: 16px;
+  }
+
+  .quality__description {
+    padding-right: 48px;
+  } 
+
+  .quality__picture {
+    margin: 36px;
+  }
+
+  .steps__title--large {
+    font-size: 36px;
+  }
+}
+
+/*
+
+TABLETS AND SMALL SCREENS
+
+*/
+
+@media (max-width: 768px) {
+  .nav__links {
+    margin-right: 8px;
+  }
+  
 
   .services {
     flex-wrap: wrap;
