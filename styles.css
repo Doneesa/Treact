@@ -458,13 +458,11 @@ FEATURES
   padding: 0 180px;
   align-items: center;
   line-height: 1.5;
+  letter-spaciong: 0.5px;
   color: #7C8BA1;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
-}
-
-.service__para {
-  color: #7C8BA1;
+  
 }
 
 /*
@@ -483,7 +481,8 @@ SERVICES
 .service {
   display: flex;
   max-width: 341px;
-  padding: 32px 24px;
+  margin: 0 16px;
+  padding: 32px 8px;
 }
 
 .icon {
@@ -501,12 +500,14 @@ SERVICES
 .service__list--title {
   margin: 0 0 0 0;
   font-size: 24px;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 .service__para {
   margin: 16px 0 0 0;
-  font-size: 16px;  
+  font-size: 16px; 
+  font-weight: 500; 
+  color: #7C8BA1;
 }
 
 /*
@@ -1377,6 +1378,10 @@ footer {
 
   .titles__large {
     font-size: 36px;
+  }
+
+  .features__sub-title {
+    font-size: 48px;
   }
 
   .quality__para {
