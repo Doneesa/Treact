@@ -963,7 +963,7 @@ TESTIMONIALS
 }
 
 .testimonials__pic--wrapper {
-  width: 50%;
+  width: 40%;
 }
 
 .testimonials__pic {
@@ -971,7 +971,7 @@ TESTIMONIALS
 }  
 
 .testimonials__description {
-  width: 50%;
+  width: 60%;
   padding: 0 0 0 64px;
   flex-direction: column;
   justify-content: center;
@@ -1090,6 +1090,7 @@ WORLD CARD
 }
 
 .world__card--wrapper {
+  margin: 0 32px;
   padding: 96px 0;
   display: flex;
   justify-content: center;
@@ -1417,11 +1418,21 @@ footer {
     font-size: 48px;
   }
 
-  .pricing__cards {
+  .pricing__card {
+    width: 100%;
+  }
+
+  .world__card--wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
   }
+
+  .world__text {
+    width: 100%;
+    padding: 0 225px 24px;
+    text-align: center;
+  }
+
 }
 
 
