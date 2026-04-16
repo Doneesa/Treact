@@ -517,12 +517,12 @@ QUALITY
 */
 
 .quality__work {
-  padding: 96px 0;
+  padding: 96px 0 84px 0;
   display: flex;
 }
 
 .quality__work--description {
-  width: 50%;
+  width: 45%;
   margin-right: 64px;
   display: flex;
   flex-direction: column;
@@ -549,13 +549,12 @@ QUALITY
 }
 
 .quality__img--wrapper {
-  padding-top: 24px;
   position: relative;
   width: 100%;
 }
 
 .quality__picture {
-  width: 50%;
+  width: 55%;
   margin: 0 56px;
 }
 
@@ -613,7 +612,7 @@ LAPTOP AND STEPS
 }
 
 .step__container {
-  max-width: 65%;
+  max-width: 85%;
   margin-top: 32px;
   display: flex;
   letter-spacing: normal;
@@ -639,8 +638,10 @@ LAPTOP AND STEPS
 
 .step__para {
   margin-top: 12px;
-  line-height: 2;
+  line-height: 1.5;
+  letter-spacing: 1px;
   font-size: 14px;
+  font-weight: 500;
   color: #718096;
 }
 
@@ -662,23 +663,25 @@ VALUES
 }
 
 .values__titles--large {
-  margin: 16px 0 32px;
+  margin: 16px 12px 32px 0;
 }
 
 .values__para {
   margin: 32px 0 0;
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
   color: #718096;
+  font-weight: 400;
 }
 
 .value_para {
-  line-height: 2.0;
+  line-height: 2.0
 }
 
 .values__cards {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .value__card {
@@ -727,6 +730,7 @@ VALUES
   margin: 16px 0 0 0;
   line-height: 1.5;
   font-size: 16px;
+  color: #7C8BA1;
 }
 
 .btn__values {
@@ -760,6 +764,7 @@ PRICING
 
 .pricing__title--large {
   margin: 16px 0;
+  font-size: 48px;
 }
 
 .plans__para {
@@ -770,7 +775,7 @@ PRICING
 .pricing__cards {
   padding-bottom: 96px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 32px;
 }
@@ -1399,7 +1404,27 @@ footer {
   .steps__title--large {
     font-size: 36px;
   }
+
+  .value__card {
+    max-width: 70%;
+  }
+
+  .value__card--2 {
+    max-width: 70%;
+  }
+
+  .pricing__title--large {
+    font-size: 48px;
+  }
+
+  .pricing__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
+
+
 
 /*
 
