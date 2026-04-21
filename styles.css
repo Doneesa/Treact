@@ -410,11 +410,15 @@ TEMPLATES
 .template__picture {
   width: 60%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .template__img--wrapper {
-  /*width: 100%;*/
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 85%;
 }
 
 .template__img {
@@ -1275,18 +1279,13 @@ footer {
 
 @media (max-width:1280px) {
   .template__img--wrapper {
-    display: flex;
-    justify-content: flex-end;
+   
   }
   
   .titles__large--templates {
     font-size: 36px;
   }
-  
-  .template__img {
-    max-width: 70%;
-  }
-  
+
 }
 
 @media (max-width: 1024px) {
