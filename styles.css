@@ -412,6 +412,7 @@ TEMPLATES
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  height: 100%;
 }
 
 .template__img--wrapper {
