@@ -1510,6 +1510,15 @@ TABLETS AND SMALL SCREENS
     text-align: center;
   }
 
+  .footer__container {
+    align-items: start;
+  }
+
+  .footer__links {
+    display: flex;
+    align-items: flex-start;
+  }
+
 }
 
 /* 
