@@ -1423,9 +1423,16 @@ footer {
 
   .world__text {
     width: 100%;
-    padding: 0 225px 24px;
     text-align: center;
   }
+
+  .world__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+  }
+
 }
 
 /*
@@ -1495,7 +1502,12 @@ TABLETS AND SMALL SCREENS
     padding: 0;
     align-items: center;
     text-align: center;
+  }
 
+  .world__text {
+    width: 100%;
+    padding: 0 225px 24px;
+    text-align: center;
   }
 
 }
