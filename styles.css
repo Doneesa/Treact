@@ -1104,7 +1104,7 @@ WORLD CARD
 }
 
 .world__text {
-  width: 45%;
+  max-width: 45%;
   font-size: 30px;
   font-weight: 700;
   color: #F7FAFC;
@@ -1478,6 +1478,26 @@ TABLETS AND SMALL SCREENS
     margin: 0;
     padding-right: 12px;
   }
+
+  .testimonials__row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .testimonials__pic--wrapper {
+    width: 65%;
+  }
+
+  .testimonials__description {
+    width: 65%;
+    margin-top: 64px;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+
+  }
+
 }
 
 /* 
