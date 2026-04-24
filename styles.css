@@ -444,6 +444,7 @@ FEATURES
 }
 
 .features__header {
+  margin-bottom: 48px;
   text-align: center;
   letter-spacing: 1px;
 }
@@ -460,8 +461,8 @@ FEATURES
 
 .para__features {
   margin-bottom: 32px;
-  padding: 0 180px;
-  align-items: center;
+  max-width: 512px;
+  margin: 0 auto;
   line-height: 1.5;
   letter-spacing: 0.5px;
   color: #7C8BA1;
@@ -574,10 +575,12 @@ LAPTOP AND STEPS
 
 .laptop__steps--box {
   padding: 96px 5px;
+  display: flex;
 }
 
 .laptop__steps--wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .laptop {
@@ -1479,9 +1482,7 @@ TABLETS AND SMALL SCREENS
     padding-right: 12px;
   }
   
-
-  .values__row {
-    display: flex;
+  .values__description--picture {
     flex-wrap: wrap;
   }
 
@@ -1490,16 +1491,6 @@ TABLETS AND SMALL SCREENS
     display: flex;
     flex-wrap: wrap;
   }
-  .values__description {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .values__description--picture {
-    flex-wrap: wrap;
-  }
-
 
   .testimonials__row {
     display: flex;
