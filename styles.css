@@ -324,7 +324,6 @@ TEMPLATES
 .header {
   padding: 96px 0;
   display: flex;
-  /*align-items: flex-end;*/
 }
 
 .templates__description {
@@ -1377,10 +1376,7 @@ footer {
 
   .template__picture {
     max-width: 700px;
-  }
-  
-  .template__img--wrapper {
-  
+    margin: 0 auto;
   }
 
   .template__img {
