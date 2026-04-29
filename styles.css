@@ -1469,10 +1469,6 @@ TABLETS AND SMALL SCREENS
     flex-direction: column;
   }
 
-  .template__img--wrapper {
-    margin: 0 200px;
-  }
-
   .services {
     flex-wrap: wrap;
   }
@@ -1635,22 +1631,19 @@ TABLETS AND SMALL SCREENS
   .cta-container {
   width: 100%;
   max-width: 448px;
-  height: 68px;
-  /*position: relative;*/
-  position: ;
+  height: auto;
+  display: block;
+  margin-bottom: 16px;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  flex-direction: column;
 }
 
-  .cta__button {
-  z-index: 1;
-  position: ;
-  margin: 8px;
+  .cta-button {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  margin: 8px 0;
   padding: 16px 32px;
-  /*height: calc(100%-16px);*/
-  height: 32px;
-  border-radius: 500px;
   width: 200px;
   }
 }
