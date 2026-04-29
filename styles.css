@@ -1105,7 +1105,7 @@ WORLD CARD
 }
 
 .world__card--wrapper {
-  margin: 0 24px;
+  margin: 0 32px;
   padding: 96px 0;
   display: flex;
   justify-content: center;
@@ -1680,19 +1680,35 @@ TABLETS AND SMALL SCREENS
     margin-top: 80px;
   }
 
+  .world__card--wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 80px 0;
+  }
+  
   .world__text {
+    margin: 0 32px;
+    margin: 0 auto;
     font-size: 24px;
   }
 
   .world__buttons {
     display: flex;
     flex-direction: column;
+    margin: 24px 100px 0 100px;
+    width: auto;
   }
 
-  .world__btn {
+  .world__btn, .world__btn--contact {
     width: auto;
+    margin: 24px 0 0 0;
     padding: 12px 24px;
     font-size: 14px;
+  }
+
+  .world__btn--contact {
+    margin-top: 16px;
   }
 }
 
