@@ -768,12 +768,16 @@ PRICING
 */
 
 .plans {
-  padding-top: 96px;
+  padding: 96px 32px 0 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   color: #1A202C;
+}
+
+.pricing__title {
+  margin-top: 40px;
 }
 
 .pricing__title--large {
@@ -782,8 +786,11 @@ PRICING
 }
 
 .plans__para {
-  width: 60%;
-  line-height: 2;
+  max-width: 528px;
+  line-height: 1.5;
+  font-size: 18px;
+  color: #7C8BA1;
+  font-weight: 400;
 }
 
 .pricing__cards {
@@ -1430,6 +1437,10 @@ footer {
     font-size: 48px;
   }
 
+  .plans__para {
+    font-size: 16px;
+  }
+
   .pricing__card {
     width: 100%;
   }
@@ -1533,9 +1544,8 @@ TABLETS AND SMALL SCREENS
   }
   
   .laptop__pic--wrapper {
-    max-width: 65%;
+    max-width: 70%;
     margin: 0;
-    padding-right: 12px;
   }
 
   .steps {
@@ -1672,12 +1682,16 @@ TABLETS AND SMALL SCREENS
   width: 200px;
   }
 
-  .header, .features__container, .quality__work, .laptop__steps--box, .values__description--picture, .plans, .testimonials, .world__card {
+  .header, .features__container, .quality__work, .laptop__steps--box, .values__description--picture, .plans, .testimonials { 
     padding: 80px 0;
   }
 
   .footer__container {
     margin-top: 80px;
+  }
+
+  .world__card {
+    margin: 80px 32px;
   }
 
   .world__card--wrapper {
@@ -1698,8 +1712,9 @@ TABLETS AND SMALL SCREENS
     flex-direction: column;
     margin: 24px 100px 0 100px;
     width: auto;
+    align-items: center;
   }
-
+  
   .world__btn, .world__btn--contact {
     width: auto;
     margin: 24px 0 0 0;
