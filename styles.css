@@ -326,6 +326,11 @@ TEMPLATES
   display: flex;
 }
 
+.header__row {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .templates__description {
   max-width: 500px;
   margin: 0 0;
@@ -1587,7 +1592,6 @@ TABLETS AND SMALL SCREENS
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    
   }
 
   .testimonials__row {
@@ -1618,6 +1622,37 @@ TABLETS AND SMALL SCREENS
     justify-content: start;
   }
   
+}
+
+/*
+
+640 PX
+
+*/
+
+@media (max-width: 640px){
+
+  .cta-container {
+  width: 100%;
+  max-width: 448px;
+  height: 68px;
+  /*position: relative;*/
+  position: ;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+  .cta__button {
+  z-index: 1;
+  position: ;
+  margin: 8px;
+  padding: 16px 32px;
+  /*height: calc(100%-16px);*/
+  height: 32px;
+  border-radius: 500px;
+  width: 200px;
+  }
 }
 
 /* 
