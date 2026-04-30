@@ -327,7 +327,7 @@ TEMPLATES
 }
 
 .header__row {
-  max-width: 600px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -527,7 +527,10 @@ QUALITY
 */
 
 .quality__work {
-  padding: 96px 0 84px 0;
+  max-width: 1280px;
+  margin: 0 36px;
+  margin: 0 auto;
+  padding: 96px 0;
   display: flex;
 }
 
@@ -580,7 +583,7 @@ LAPTOP AND STEPS
 */
 
 .laptop__steps--box {
-  padding: 96px 5px;
+  padding: 96px 32px;
   display: flex;
 }
 
@@ -1637,7 +1640,11 @@ TABLETS AND SMALL SCREENS
   
   .footer__links {
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
+  }
+
+  .links {
+    align-items: center;
   }
 
   .footer__info {
@@ -1707,14 +1714,6 @@ TABLETS AND SMALL SCREENS
     font-size: 24px;
   }
 
-  .world__buttons {
-    display: flex;
-    flex-direction: column;
-    margin: 24px 100px 0 100px;
-    width: auto;
-    align-items: center;
-  }
-  
   .world__btn, .world__btn--contact {
     width: auto;
     margin: 24px 0 0 0;
