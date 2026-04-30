@@ -1645,6 +1645,7 @@ TABLETS AND SMALL SCREENS
 
   .links {
     align-items: center;
+    padding: 0 16px;
   }
 
   .footer__info {
