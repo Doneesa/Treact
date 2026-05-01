@@ -1797,20 +1797,35 @@ TABLETS AND SMALL SCREENS
   .description__para {
     font-size: 14px;
   }
+  
+    .review {
+    margin-bottom: 32px;
+  }
+  
+  .client__and--arrows {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
 
   .client {
     width: 100%;
     display: inline-block;
     display: flex;
     flex-direction: column;
+    margin-top: ;
+  }
+
+  .name__and--role {
+    margin-left: 0;
   }
 
   .arrows {
-    display: 
+    margin-top: 32px;
   }
 
   .world__card {
-    margin: 0 32px;
+    margin: 0 ;
     padding: 80px 0;
   }
 
@@ -1818,6 +1833,7 @@ TABLETS AND SMALL SCREENS
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    margin: 0 32px;
     padding: 80px 0;
   }
   
@@ -1827,14 +1843,23 @@ TABLETS AND SMALL SCREENS
     font-size: 24px;
   }
 
-  .world__btn, .world__btn--contact {
+  .world__buttons {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .world__btn {
     width: auto;
     margin: 24px 0 0 0;
     padding: 12px 24px;
     font-size: 14px;
   }
-
+  
   .world__btn--contact {
+    width: auto;
+    margin: 24px 0 0 0;
+    padding: 12px 24px;
     margin-top: 16px;
   }
 }
