@@ -147,7 +147,7 @@ NAVIGATION
 */
 
 .nav {
-  padding-top: 24px;
+  padding-top: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -323,16 +323,18 @@ TEMPLATES
 
 .header {
   padding: 96px 0;
-  display: flex;
-}
-
-.header__row {
   max-width: 1280px;
   margin: 0 auto;
 }
 
+.header__row {
+  margin: 0 auto;
+  margin: 0 32px;
+  padding: 0;
+}
+
 .templates__description {
-  max-width: 500px;
+  max-width: 40%;
   margin: 0 0;
   display: flex;
   flex-direction: column;
@@ -409,15 +411,14 @@ TEMPLATES
   width: 100%;
   filter: grayscale(1) invert(1);
   margin-top: 16px;
-  padding-right: 128px;  
+  /*padding-right: 128px; */ 
 }
 
 .template__picture {
-  width: 60%;
+  width: 55%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  height: 100%;
 }
 
 .template__img--wrapper {
@@ -754,6 +755,7 @@ VALUES
 
 .btn__values {
   margin: 48px 0 0 0;
+  font-size: 14px;
 }
 
 .values__picture {
@@ -1202,9 +1204,10 @@ footer {
 }
 
 .links {
-  color: white;
   display: flex;
   flex-direction: column;
+  margin-top: 48px;
+  color: white;
 }
 
 .link__type {
@@ -1309,7 +1312,6 @@ footer {
   .titles__large--templates {
     font-size: 36px;
   }
-
 }
 
 @media (max-width: 1024px) {
@@ -1333,6 +1335,7 @@ footer {
   .header {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
     text-align: center;
   }
   
@@ -1346,7 +1349,8 @@ footer {
   }
   
   .templates__description {
-    width: 100% ;
+    max-width: 550px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1367,7 +1371,8 @@ footer {
   }
   
   .template__picture {
-    justify-content: center;
+    width: 60%;
+  /*  justify-content: center;*/
   }
 
   .template__img--wrapper {
@@ -1486,10 +1491,6 @@ TABLETS AND SMALL SCREENS
 @media (max-width: 768px) {
   .nav__links {
     margin-right: 8px;
-  }
-
-  .links {
-    width: calc(100%/3);
   }
 
   .header {
@@ -1635,6 +1636,11 @@ TABLETS AND SMALL SCREENS
     text-align: center;
   }
   
+  .client__testimonial {
+    display: flex;
+    flex-direction: column;
+  }
+
   .world__text {
     width: 100%;
     text-align: center;
@@ -1645,8 +1651,7 @@ TABLETS AND SMALL SCREENS
     justify-content: center;
   }
 
-  .links {
-    align-items: center;
+  .links { 
     padding: 0 16px;
   }
 
@@ -1673,6 +1678,7 @@ TABLETS AND SMALL SCREENS
 
 @media (max-width: 640px){
 
+  /*
   .cta-container {
   width: 100%;
   max-width: 448px;
@@ -1682,7 +1688,6 @@ TABLETS AND SMALL SCREENS
   display: flex;
   flex-direction: column;
 }
-
   .cta-button {
   display: inline-block;
   position: relative;
@@ -1691,17 +1696,122 @@ TABLETS AND SMALL SCREENS
   padding: 16px 32px;
   width: 200px;
   }
-
+*/
   .header, .features__container, .quality__work, .laptop__steps--box, .values__description--picture, .plans, .testimonials { 
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .footer__container {
     margin-top: 80px;
   }
 
+  .features__sub-title {
+    font-size: 36px;
+  }
+
+  .para__features {
+    font-size: 14px;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service__list--title {
+    margin: 0 auto;
+  }
+
+  .service__para {
+    text-align: center;
+  }
+
+  .quality__work {
+    margin-top: 0;
+  }
+  
+  .quality__picture {
+    width: 100%;
+  }
+
+  .quality__img {
+    max-width: 448px;
+  }
+  .quality__titles--large {
+    font-size: 30px;
+  }
+
+  .quality__work--description {
+    width: 80%;
+  }
+
+
+
+
+  .laptop {
+    max-width: 500px;
+  }
+
+  .laptop__pic--wrapper {
+    width: 100%;
+  }
+
+  .laptop__pic--img {
+    width: 100%;
+  }
+
+
+
+  .values__picture {
+    margin: 0;
+    margin: 0 auto;
+  }
+
+  .values__pic {
+    margin: 0;
+  }
+
+  .values__description {
+    margin-top: 64px;
+  }
+
+  .pricing__title--large {
+    font-size: 36px;
+  }
+
+  .plans__para {
+    font-size: 14px;
+  }
+
+  .testimonials__description {
+    width: 80%
+  }
+
+  .testimonials__title--large {
+    padding: 0;
+    font-size: 30px
+  }
+
+  .description__para {
+    font-size: 14px;
+  }
+
+  .client {
+    width: 100%;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .arrows {
+    display: 
+  }
+
   .world__card {
-    margin: 80px 32px;
+    margin: 0 32px;
+    padding: 80px 0;
   }
 
   .world__card--wrapper {
