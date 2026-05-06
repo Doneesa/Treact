@@ -1678,25 +1678,6 @@ TABLETS AND SMALL SCREENS
 
 @media (max-width: 640px){
 
-  /*
-  .cta-container {
-  width: 100%;
-  max-width: 448px;
-  height: auto;
-  display: block;
-  margin-bottom: 16px;
-  display: flex;
-  flex-direction: column;
-}
-  .cta-button {
-  display: inline-block;
-  position: relative;
-  z-index: 2;
-  margin: 8px 0;
-  padding: 16px 32px;
-  width: 200px;
-  }
-*/
   .header, .features__container, .quality__work, .laptop__steps--box, .values__description--picture, .plans, .testimonials { 
     padding-top: 80px;
     padding-bottom: 80px;
@@ -1747,9 +1728,6 @@ TABLETS AND SMALL SCREENS
     width: 80%;
   }
 
-
-
-
   .laptop {
     max-width: 500px;
   }
@@ -1761,8 +1739,6 @@ TABLETS AND SMALL SCREENS
   .laptop__pic--img {
     width: 100%;
   }
-
-
 
   .values__picture {
     margin: 0;
@@ -1798,7 +1774,7 @@ TABLETS AND SMALL SCREENS
     font-size: 14px;
   }
   
-    .review {
+  .review {
     margin-bottom: 32px;
   }
   
@@ -1813,7 +1789,6 @@ TABLETS AND SMALL SCREENS
     display: inline-block;
     display: flex;
     flex-direction: column;
-    margin-top: ;
   }
 
   .name__and--role {
